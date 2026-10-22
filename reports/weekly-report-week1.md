@@ -16,7 +16,7 @@
 | AWS Region | `us-east-1` – US East (N. Virginia) |
 | Repository Git | https://github.com/24110208-rgb/ecs-fargate-web-app |
 | Nhánh chính | `main` |
-| Commit mã nguồn đã ghi nhận | `7b46a55` |
+| Commit mã nguồn đã ghi nhận | [`7b46a55`](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/7b46a550590707dfc2a15edca25f0fc7bdd754e7) |
 | Tổng thời gian làm việc | 10 giờ |
 | Trạng thái chung | Đã triển khai ứng dụng thử nghiệm trên AWS; đang hoàn thiện tài liệu và rà soát bảo mật |
 
@@ -292,24 +292,29 @@ Các nội dung trên chưa được ghi nhận là hoàn thành nếu mới d�
 
 ### 6.2. Cấu trúc thư mục thực tế
 
-Theo Explorer trong VS Code, cấu trúc thư mục dự án hiện tại là:
+Cấu trúc thư mục dự án hiện tại trên repository:
 
 ```text
 ecs-fargate-web-app/
-├── .venv/
-│   ├── Include/
-│   ├── Lib/
-│   │   └── site-packages/
-│   ├── Scripts/
-│   ├── .gitignore
-│   └── pyvenv.cfg
 ├── app/
 │   ├── templates/
 │   │   └── index.html
 │   └── app.py
+├── evidence/
+│   └── week1/
+│       ├── 01-website-home.png
+│       ├── 02-health-check.png
+│       ├── 03-docker-image-local.png
+│       ├── 04-ecr-image.png
+│       ├── 05-ecs-service-2-tasks.png
+│       ├── 06-target-group-healthy(1).png
+│       ├── 06-target-group-healthy.png
+│       ├── 07-cloudwatch-logs.png
+│       └── 08-security-group.png
+├── reports/
+│   └── weekly-report-week1.md
 ├── .dockerignore
 ├── .gitignore
-├── AWSCLIV2-User.msi
 ├── Dockerfile
 ├── README.md
 └── requirements.txt
@@ -317,19 +322,17 @@ ecs-fargate-web-app/
 
 Chức năng các thành phần:
 
-- `.venv/`: môi trường ảo Python sử dụng trong quá trình phát triển ứng dụng.
 - `app/app.py`: mã nguồn Flask và các endpoint của ứng dụng.
 - `app/templates/index.html`: giao diện trang chủ.
+- `evidence/week1/`: ảnh minh chứng cho các bước triển khai chính trong tuần 1.
+- `reports/`: báo cáo tiến độ theo từng tuần.
 - `.dockerignore`: loại trừ file/thư mục không cần thiết khỏi Docker build context.
 - `.gitignore`: quy định file/thư mục không đưa vào Git.
 - `Dockerfile`: định nghĩa các bước xây dựng và chạy container.
 - `README.md`: tài liệu giới thiệu và hướng dẫn sử dụng repository.
 - `requirements.txt`: khai báo thư viện Python cần cài đặt.
-- `AWSCLIV2-User.msi`: bộ cài đặt AWS CLI đã tải xuống trong quá trình chuẩn bị môi trường.
 
-**Lưu ý:** `.venv/` là môi trường ảo cục bộ, không cần đưa toàn bộ thư mục lên GitHub. File `AWSCLIV2-User.msi` là bộ cài đặt công cụ, không phải mã nguồn ứng dụng.
-
-Tại thời điểm ghi nhận cấu trúc Explorer, các thư mục `docs/`, `reports/` và `evidence/` chưa nằm trong thư mục dự án. Ảnh minh chứng đang được lưu tại `D:\Cloud\CUỐI KÌ`, bên ngoài thư mục `ecs-fargate-web-app`.
+**Lưu ý:** `.venv/` là môi trường ảo cục bộ, đã được khai báo trong `.gitignore` và không đưa lên GitHub. File `AWSCLIV2-User.msi` là bộ cài đặt công cụ, không phải mã nguồn ứng dụng, cũng không đưa lên repository.
 
 ### 6.3. Container hóa ứng dụng
 
@@ -467,7 +470,7 @@ AWS resource tag dùng để quản lý tài nguyên; Docker image tag dùng đ�
 |---|---|
 | Repository URL | https://github.com/24110208-rgb/ecs-fargate-web-app |
 | Nhánh chính | `main` |
-| Commit đã ghi nhận | `7b46a55` |
+| Commit đã ghi nhận | [`7b46a55`](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/7b46a550590707dfc2a15edca25f0fc7bdd754e7) |
 | Commit message | `Build Flask web app with optimized Docker image` |
 | Mã nguồn ứng dụng | Đã đẩy lên GitHub |
 | Dockerfile và `.dockerignore` | Đã đẩy lên GitHub |
@@ -486,36 +489,49 @@ Kết quả xác nhận repository cục bộ đồng bộ với `origin/main` t
 
 ### 8.2. Cấu trúc repository thực tế
 
-Cấu trúc hiện tại đã được ghi nhận từ Explorer trong VS Code:
+Cấu trúc repository hiện tại trên nhánh `main`:
 
 ```text
 ecs-fargate-web-app/
-├── .venv/
-│   ├── Include/
-│   ├── Lib/
-│   │   └── site-packages/
-│   ├── Scripts/
-│   ├── .gitignore
-│   └── pyvenv.cfg
 ├── app/
 │   ├── templates/
 │   │   └── index.html
 │   └── app.py
+├── evidence/
+│   └── week1/
+│       ├── 01-website-home.png
+│       ├── 02-health-check.png
+│       ├── 03-docker-image-local.png
+│       ├── 04-ecr-image.png
+│       ├── 05-ecs-service-2-tasks.png
+│       ├── 06-target-group-healthy(1).png
+│       ├── 06-target-group-healthy.png
+│       ├── 07-cloudwatch-logs.png
+│       └── 08-security-group.png
+├── reports/
+│   └── weekly-report-week1.md
 ├── .dockerignore
 ├── .gitignore
-├── AWSCLIV2-User.msi
 ├── Dockerfile
 ├── README.md
 └── requirements.txt
 ```
 
-Đây là cấu trúc thư mục được ghi nhận tại thời điểm kiểm tra, không bao gồm các thư mục tài liệu hoặc minh chứng chưa được tạo bên trong dự án.
+Thư mục `.venv/` và file `AWSCLIV2-User.msi` không được đưa lên GitHub (`.venv/` đã được khai báo trong `.gitignore`; `AWSCLIV2-User.msi` là bộ cài đặt công cụ, không phải mã nguồn ứng dụng).
 
-Các ảnh minh chứng hiện được lưu ở thư mục cha `D:\Cloud\CUỐI KÌ`, cùng cấp với thư mục `ecs-fargate-web-app`, chứ chưa nằm trong repository.
+### 8.3. Các file mã nguồn trong repository
 
-Nếu cần đưa báo cáo và ảnh vào GitHub, em sẽ tạo thêm thư mục lưu tài liệu và minh chứng sau. Việc bổ sung này là công việc tiếp theo, không phải trạng thái hiện tại của repository.
+Các file mã nguồn chính đã được đẩy lên nhánh `main`:
 
-### 8.3. Lưu ý quản lý mã nguồn
+| File | Link trực tiếp |
+|---|---|
+| `app/app.py` | [app/app.py](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/app/app.py) |
+| `Dockerfile` | [Dockerfile](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/Dockerfile) |
+| `requirements.txt` | [requirements.txt](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/requirements.txt) |
+| `README.md` | [README.md](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/README.md) |
+| `app/templates/index.html` | [app/templates/index.html](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/app/templates/index.html) |
+
+### 8.4. Lưu ý quản lý mã nguồn
 
 Trước khi commit tài liệu bổ sung, em kiểm tra `.gitignore` và bảo đảm có các quy tắc phù hợp:
 
@@ -553,9 +569,9 @@ Trong Tuần 1, em trực tiếp thực hiện toàn bộ công việc của d�
 
 | Ngày | Thành viên | Công việc thực hiện | Số giờ | Minh chứng |
 |---|---|---|---:|---|
-| 18/10/2026 (Chủ nhật) | Đỗ Lê Gia Hân | Phân tích yêu cầu và xây dựng ứng dụng Flask, trang chủ và endpoint `/health` | 1,5 | GitHub, mã nguồn ứng dụng |
-| 18/10/2026 (Chủ nhật) | Đỗ Lê Gia Hân | Xây dựng Dockerfile, `.dockerignore`, build image và kiểm thử container cục bộ | 2,0 | Ảnh Docker/PowerShell |
-| 18/10/2026 (Chủ nhật) | Đỗ Lê Gia Hân | Quản lý mã nguồn, kiểm tra Git và push repository lên GitHub | 0,5 | Repository và commit |
+| 17/10/2026 (Thứ Sáu) | Đỗ Lê Gia Hân | Phân tích yêu cầu và xây dựng ứng dụng Flask, trang chủ và endpoint `/health` | 1,5 | GitHub, mã nguồn ứng dụng |
+| 17/10/2026 (Thứ Sáu) | Đỗ Lê Gia Hân | Xây dựng Dockerfile, `.dockerignore`, build image và kiểm thử container cục bộ | 2,0 | Ảnh Docker/PowerShell |
+| 17/10/2026 (Thứ Sáu) | Đỗ Lê Gia Hân | Quản lý mã nguồn, kiểm tra Git và push repository lên GitHub | 0,5 | Repository và commit |
 | 21/10/2026 | Đỗ Lê Gia Hân | Cài đặt AWS CLI, cấu hình credentials tạm thời, tạo ECR repository và push Docker image | 1,0 | Ảnh ECR và Terminal |
 | 21/10/2026 | Đỗ Lê Gia Hân | Tạo ECS cluster `ecs-fargate-web-app-cluster` | 0,75 | Ảnh ECS Cluster |
 | 21/10/2026 | Đỗ Lê Gia Hân | Tạo Task Definition `ecs-fargate-web-app-task:1`, cấu hình image, cổng, CPU/RAM và CloudWatch Logs | 1,0 | Ảnh Task Definition |
@@ -565,17 +581,11 @@ Trong Tuần 1, em trực tiếp thực hiện toàn bộ công việc của d�
 
 **Tổng giờ làm việc của em: 10 giờ.**
 
-Ngày 18/10/2026 được ghi nhận theo mốc Chủ nhật mà em nhớ; các công việc triển khai AWS được ghi ngày 21/10/2026 theo thời điểm thể hiện trên AWS Console. Em cần đối chiếu lại lịch thực tế trước khi nộp nếu ngày hoặc thời lượng từng công việc không khớp.
+Ngày 17/10/2026 được xác nhận theo timestamp commit `7b46a55` (17/10/2026 20:06 +0700) trên GitHub. Các công việc triển khai AWS được ghi ngày 21/10/2026 theo thời điểm thể hiện trên AWS Console.
 
 ## 10. Minh chứng tuần 1
 
-Các ảnh minh chứng hiện được lưu ở thư mục:
-
-`D:\Cloud\CUỐI KÌ`
-
-Thư mục này nằm bên ngoài thư mục dự án `D:\Cloud\CUỐI KÌ\ecs-fargate-web-app`. Để ảnh hiển thị trực tiếp trong báo cáo Markdown và có thể quản lý cùng repository, em cần sao chép ảnh vào một thư mục minh chứng nằm bên trong dự án, chẳng hạn `evidence/week1/`.
-
-Sau khi sao chép, các đường dẫn ảnh trong báo cáo sẽ được viết tương đối từ thư mục `reports/`.
+Các ảnh minh chứng đã được đưa vào repository tại thư mục `evidence/week1/` và có thể truy cập trực tiếp trên GitHub. Đường dẫn tương đối trong báo cáo được viết từ thư mục `reports/`; link blob tương ứng được ghi chú bên dưới mỗi hình để tiện kiểm tra.
 
 ### 10.1. Giao diện trang chủ ứng dụng
 
@@ -583,35 +593,37 @@ Sau khi sao chép, các đường dẫn ảnh trong báo cáo sẽ được vi�
 
 ![Giao diện trang chủ ứng dụng Flask](../evidence/week1/01-website-home.png)
 
+[Xem trên GitHub](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/01-website-home.png)
+
 ### 10.2. Kiểm tra sức khỏe ứng dụng
 
 **Hình 2.** Endpoint `/health` trả về trạng thái `healthy`.
 
-![Kết quả health check](../evidence/week1/02-health-check.png)
+![Kết quả health check](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/02-health-check.png?raw=true)
 
 ### 10.3. Docker image trên máy tính cá nhân
 
 **Hình 3.** Kết quả lệnh `docker images`, thể hiện Docker image `ecs-fargate-web-app:week1` đã được build cục bộ.
 
-![Docker image trên laptop](../evidence/week1/03-docker-image-local.png)
+![Docker image trên laptop](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/03-docker-image-local.png?raw=true)
 
 ### 10.4. Docker image trên Amazon ECR
 
 **Hình 4.** Repository `ecs-fargate-web-app` và Docker image tag `week1` trên Amazon ECR.
 
-![Docker image trên Amazon ECR](../evidence/week1/04-ecr-image.png)
+![Docker image trên Amazon ECR](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/04-ecr-image.png?raw=true)
 
 ### 10.5. ECS Service và hai tasks
 
 **Hình 5.** ECS Service `ecs-fargate-web-app-service` sử dụng Task Definition `ecs-fargate-web-app-task:1`, với số lượng mong muốn là hai tasks.
 
-![ECS Service với hai tasks](../evidence/week1/05-ecs-service-2-tasks.png)
+![ECS Service với hai tasks](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/05-ecs-service-2-tasks.png?raw=true)
 
 ### 10.6. Trạng thái Target Group
 
 **Hình 6.** Trạng thái các targets thuộc target group `ecs-fargate-web-app-tg`.
 
-![Trạng thái Target Group](../evidence/week1/06-target-group-healthy.png)
+![Trạng thái Target Group](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/06-target-group-healthy.png?raw=true)
 
 *Lưu ý: Em cần sử dụng ảnh chụp trạng thái mới nhất sau khi kiểm tra Target group. Nếu ảnh chưa thể hiện `2 Healthy` và `0 Unhealthy`, cần kiểm tra lại trước khi dùng ảnh làm minh chứng hoàn thành.*
 
@@ -619,13 +631,13 @@ Sau khi sao chép, các đường dẫn ảnh trong báo cáo sẽ được vi�
 
 **Hình 7.** CloudWatch Logs ghi nhận các request `GET /health` từ `ELB-HealthChecker/2.0`, với mã phản hồi HTTP 200.
 
-![CloudWatch Logs của ứng dụng](../evidence/week1/07-cloudwatch-logs.png)
+![CloudWatch Logs của ứng dụng](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/07-cloudwatch-logs.png?raw=true)
 
 ### 10.8. Cấu hình Security Group
 
 **Hình 8.** Các inbound rules của Security group `ecs-fargate-web-app-task-sg`, bao gồm HTTP port 80 và TCP port 5000.
 
-![Cấu hình Security Group](../evidence/week1/08-security-group.png)
+![Cấu hình Security Group](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week1/08-security-group.png?raw=true)
 
 Các ảnh minh chứng cần thể hiện thông tin quan trọng như tên tài nguyên, Region và trạng thái. Trước khi chia sẻ repository công khai, em cần kiểm tra để không để lộ Access Key, Secret Access Key, Session Token hoặc các thông tin bí mật.
 
@@ -669,4 +681,4 @@ Nhìn chung, em đã hoàn thành phần triển khai cốt lõi của ứng d�
 
 **Người thực hiện và cập nhật báo cáo:** Đỗ Lê Gia Hân
 
-**Ngày cập nhật báo cáo:** 21/10/2026
+**Ngày cập nhật báo cáo:** 22/10/2026
