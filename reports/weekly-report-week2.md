@@ -124,14 +124,6 @@ Việc tách Security Group cho ALB và ECS tasks, đồng thời giới hạn n
 
 ### 6. Danh mục minh chứng và liên kết trong repository
 
-Em dự kiến lưu minh chứng trong thư mục `evidence/week2/` của repository. Sau khi ảnh được thêm và push lên GitHub, em sẽ bổ sung URL Blob thực tế vào cột cuối để giảng viên có thể mở trực tiếp từng file.
-
-Mẫu URL Blob:
-
-`https://github.com/<OWNER>/<REPOSITORY>/blob/<BRANCH>/evidence/week2/<TEN_FILE>.png`
-
-Trong đó, em thay `<OWNER>`, `<REPOSITORY>`, `<BRANCH>` và `<TEN_FILE>` bằng thông tin thực tế của repository. Các vị trí bên dưới là chỗ để bổ sung URL thật, chưa phải liên kết đã xác minh.
-
 | Tên file minh chứng | Nội dung | Link GitHub Blob |
 |---|---|---|
 | `01-ecs-service-2-tasks.png` | ECS Service và trạng thái hai tasks | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/01-ecs-service-2-tasks.png) |
@@ -147,7 +139,6 @@ Trong đó, em thay `<OWNER>`, `<REPOSITORY>`, `<BRANCH>` và `<TEN_FILE>` bằn
 | `13-website-homepage.png` | Trang chủ truy cập qua DNS của ALB | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/13-website-homepage.png) |
 | `14-health-endpoint.png` | Kết quả kiểm tra endpoint `/health` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/14-health-endpoint.png) |
 
-**Ghi chú:** Em sẽ kiểm tra lại file thực tế trong repository và thay các dòng “Dán URL Blob tại đây” bằng URL GitHub Blob tương ứng. Em chỉ xác nhận một minh chứng đã được lưu khi file đã thực sự tồn tại trong repository.
 
 ### 7. Khó khăn và hướng xử lý tiếp theo
 
