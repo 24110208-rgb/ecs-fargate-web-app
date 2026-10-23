@@ -134,18 +134,18 @@ Trong đó, em thay `<OWNER>`, `<REPOSITORY>`, `<BRANCH>` và `<TEN_FILE>` bằn
 
 | Tên file minh chứng | Nội dung | Link GitHub Blob |
 |---|---|---|
-| `01-ecs-service-2-tasks.png` | ECS Service và trạng thái hai tasks | [Dán URL Blob tại đây] |
-| `05-cloudwatch-logs.png` | Danh sách log streams của ứng dụng | [Dán URL Blob tại đây] |
-| `06-cloudwatch-log-events.png` | Log khởi động Gunicorn và các yêu cầu health check | [Dán URL Blob tại đây] |
-| `07-ecs-security-group-inbound.png` | Các quy tắc inbound của Security Group ECS tasks | [Dán URL Blob tại đây] |
-| `07b-alb-security-group.png` | Security Group gắn với ALB | [Dán URL Blob tại đây] |
-| `08-task-definition-roles.png` | JSON Revision 2 thể hiện cả hai trường role là `LabRole` | [Dán URL Blob tại đây] |
-| `09-task-definition-revision-2-created.png` | AWS xác nhận tạo Revision 2 thành công | [Dán URL Blob tại đây] |
-| `10-service-update-revision-2.png` | Cấu hình cập nhật ECS Service sang Revision 2 | [Dán URL Blob tại đây] |
-| `11-service-revision-2-running.png` | Service chạy Revision 2 với hai tasks và Deployment Success | [Dán URL Blob tại đây] |
-| `12-target-group-health.png` | Target Group có hai targets Healthy | [Dán URL Blob tại đây] |
-| `13-website-homepage.png` | Trang chủ truy cập qua DNS của ALB | [Dán URL Blob tại đây] |
-| `14-health-endpoint.png` | Kết quả kiểm tra endpoint `/health` | [Dán URL Blob tại đây] |
+| `01-ecs-service-2-tasks.png` | ECS Service và trạng thái hai tasks | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/01-ecs-service-2-tasks.png) |
+| `05-cloudwatch-logs.png` | Danh sách log streams của ứng dụng | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/05-cloudwatch-logs.png) |
+| `06-cloudwatch-log-events.png` | Log khởi động Gunicorn và các yêu cầu health check | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/06-cloudwatch-log-events.png) |
+| `07-ecs-security-group-inbound.png` | Các quy tắc inbound của Security Group ECS tasks | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/07-ecs-security-group-inbound.png) |
+| `07b-alb-security-group.png` | Security Group gắn với ALB | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/07b-alb-security-group.png) |
+| `08-task-definition-roles.png` | JSON Revision 2 thể hiện cả hai trường role là `LabRole` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/08-task-definition-roles.png) |
+| `09-task-definition-revision-2-created.png` | AWS xác nhận tạo Revision 2 thành công | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/09-task-definition-revision-2-created.png) |
+| `10-service-update-revision-2.png` | Cấu hình cập nhật ECS Service sang Revision 2 | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/10-service-update-revision-2.png) |
+| `11-service-revision-2-running.png` | Service chạy Revision 2 với hai tasks và Deployment Success | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/11-service-revision-2-running.png) |
+| `12-target-group-health.png` | Target Group có hai targets Healthy | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/12-target-group-health.png) |
+| `13-website-homepage.png` | Trang chủ truy cập qua DNS của ALB | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/13-website-homepage.png) |
+| `14-health-endpoint.png` | Kết quả kiểm tra endpoint `/health` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/14-health-endpoint.png) |
 
 **Ghi chú:** Em sẽ kiểm tra lại file thực tế trong repository và thay các dòng “Dán URL Blob tại đây” bằng URL GitHub Blob tương ứng. Em chỉ xác nhận một minh chứng đã được lưu khi file đã thực sự tồn tại trong repository.
 
