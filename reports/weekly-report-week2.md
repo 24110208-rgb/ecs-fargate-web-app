@@ -140,7 +140,17 @@ Việc tách Security Group cho ALB và ECS tasks, đồng thời giới hạn n
 | `14-health-endpoint.png` | Kết quả kiểm tra endpoint `/health` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week2/14-health-endpoint.png) |
 
 
-### 7. Khó khăn và hướng xử lý tiếp theo
+### 7. Lịch sử commit
+
+Các commit liên quan đến Tuần 2 trên nhánh `main`:
+
+| Commit | Ngày | Nội dung |
+|---|---|---|
+| [`1795279`](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/17952794ca8b921c646e620a30c73208d9a4e9f9) | 23/10/2026 | Add week2 evidence screenshots and weekly report |
+| [`f4bef2b`](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/f4bef2bb99d54a1191f009780c3c8fdea20c5a08) | 23/10/2026 | docs: add blob links for week2 evidence in report |
+| [`8314a49`](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/8314a495fda602ba234b51253f6ea0f06a4bd960) | 23/10/2026 | docs: update week2 report |
+
+### 8. Khó khăn và hướng xử lý tiếp theo
 
 Trong quá trình kiểm tra, em phát hiện Task Definition Revision 1 chưa khai báo Task role. Em đã xử lý bằng cách tạo Revision 2, thiết lập `LabRole` cho cả Task role và Task execution role, sau đó cập nhật Service để sử dụng revision mới.
 
@@ -152,9 +162,8 @@ Ngoài ra, việc ALB và ECS tasks dùng chung Security Group cho thấy cấu 
 2. Xem xét tách Security Group cho ALB và ECS tasks để giới hạn nguồn truy cập phù hợp.
 3. Kiểm thử lại website và endpoint `/health` nếu có thay đổi cấu hình mạng.
 4. Cập nhật README và báo cáo tiến độ trong repository.
-5. Commit các thay đổi thực tế để lịch sử Git phản ánh đúng tiến độ thực hiện.
 
-### 8. Tổng kết của sinh viên
+### 9. Tổng kết của sinh viên
 
 Trong Tuần 2, em đã kiểm tra và hoàn thiện một số cấu hình cốt lõi của ứng dụng web triển khai trên AWS. Em tạo Task Definition Revision 2 để đáp ứng yêu cầu sử dụng `LabRole` cho cả Task role và Task execution role, cập nhật ECS Service sang revision mới và xác nhận dịch vụ duy trì hai tasks đang chạy.
 
