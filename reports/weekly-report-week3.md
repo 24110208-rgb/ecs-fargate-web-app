@@ -322,11 +322,7 @@ Các thao tác triển khai, kiểm thử và giám sát được thực hiện 
 
 ### 6. Minh chứng thực hiện tuần 3
 
-Các ảnh chụp AWS Console và kết quả kiểm thử được lưu trong repository tại thư mục:
-
-`evidence/week3/`
-
-Sau khi upload ảnh lên GitHub, em sẽ bổ sung liên kết Blob trực tiếp cho từng minh chứng để giảng viên có thể mở và đối chiếu.
+Các ảnh chụp AWS Console và kết quả kiểm thử được lưu trong repository tại thư mục `evidence/week3/`. Link blob trực tiếp cho từng minh chứng được ghi trong bảng dưới để giảng viên có thể mở và đối chiếu.
 
 | STT | Tên file minh chứng                              | Nội dung                                                 | Link Blob                |
 | --- | ------------------------------------------------ | -------------------------------------------------------- | ------------------------ |
@@ -384,7 +380,7 @@ Các file cần được cập nhật trong repository:
 - Báo cáo tuần 3: `reports/weekly-report-week3.md`
 - Ảnh minh chứng: `evidence/week3/`
 
-Sau khi upload, cấu trúc repository dự kiến:
+Cấu trúc repository hiện tại:
 
 ```text
 ecs-fargate-web-app/
