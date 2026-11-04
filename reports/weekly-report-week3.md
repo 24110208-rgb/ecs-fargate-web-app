@@ -17,7 +17,7 @@
 
 ### 2. Phân công công việc và thời gian thực hiện
 
-Trong tuần 1, em (mã sinh viên 24110208) trực tiếp thực hiện các công việc xây dựng ứng dụng, container hóa và triển khai những thành phần nền tảng trên AWS. Thành viên 24110380 đã đăng ký tham gia đề tài từ ngày 10/05 nhưng chưa trực tiếp tham gia triển khai trong các tuần trước.
+Trong tuần 1, em (mã sinh viên 24110208) trực tiếp thực hiện các công việc xây dựng ứng dụng, container hóa và triển khai những thành phần nền tảng trên AWS và tuần 2 em cũng thực hiện toàn bộ. Thành viên 24110380 đã đăng ký tham gia đề tài từ ngày 10/05 nhưng chưa trực tiếp tham gia triển khai trong các tuần trước.
 
 Sang tuần 3, em tiếp tục thực hiện các công việc tích hợp, bảo mật, giám sát và quản lý tài nguyên AWS. Thành viên 24110380 chưa tham gia thực hiện công việc trong tuần này. Vì vậy, em ghi nhận đúng số giờ thực tế của từng thành viên như sau:
 
@@ -302,8 +302,6 @@ Sau khi AWS cập nhật thành công, trang Service hiển thị:
 
 Trong phần Events, AWS ghi nhận hai tasks đã được dừng và hai targets được deregister khỏi Target Group.
 
-Việc scale về 0 chỉ dừng các Fargate Tasks đang chạy, không xóa ECS Service, Cluster, Task Definition, ECR Repository, ALB hoặc CloudWatch Dashboard. Các tài nguyên vẫn được giữ lại để tiếp tục sử dụng trong tuần tiếp theo.
-
 ### 5. Tổng hợp kết quả thực hiện tuần 3
 
 | STT | Hạng mục                    | Kết quả                                      |
@@ -434,15 +432,6 @@ Trong tuần 3, em đã thực hiện nhiều bước kiểm tra và cấu hình
 Một vấn đề em gặp trong quá trình giám sát là biểu đồ CPU và Memory ban đầu sử dụng Statistic `Sum`, dẫn đến giá trị phần trăm bị cộng dồn. Sau khi kiểm tra, em đổi sang `Average` cho hai metrics và cập nhật lại Dashboard.
 
 Ngoài ra, khi mới tạo CloudWatch Alarm, trạng thái ban đầu là `Insufficient data`. Sau khi CloudWatch có đủ dữ liệu đánh giá, Alarm chuyển sang `OK`.
-
-Các công việc cần tiếp tục trong tuần 4:
-
-1. Kiểm thử tổng thể ứng dụng và các thành phần AWS.
-2. Kiểm tra lại khả năng khởi chạy ECS Service từ Desired Count 0 lên 2.
-3. Đánh giá và tối ưu chi phí của ALB, ECR, CloudWatch và các tài nguyên liên quan.
-4. Rà soát các tài nguyên không cần thiết và dọn dẹp theo yêu cầu đề tài.
-5. Hoàn thiện README, sơ đồ kiến trúc và báo cáo tổng kết.
-6. Chuẩn bị kịch bản demo và video trình bày sản phẩm.
 
 ### 9. Tổng kết
 
