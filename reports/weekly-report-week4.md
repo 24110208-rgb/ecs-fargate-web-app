@@ -295,7 +295,7 @@ Các ảnh minh chứng tuần 4 được tổ chức trong thư mục `evidence
 | 14 | Thông tin Application Load Balancer | `evidence/week4/13-final-alb-resource-review.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/13-final-alb-resource-review.png) |
 | 15 | Các image tags trong Amazon ECR | `evidence/week4/14-final-ecr-images.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/14-final-ecr-images.png) |
 | 16 | CloudWatch Log Group và thời gian lưu trữ | `evidence/week4/15-final-cloudwatch-log-group-review.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/15-final-cloudwatch-log-group-review.png) |
-| 17 | Trạng thái ECR Lifecycle Policy | `evidence/week4/16-final-ecr-lifecycle-policy.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/16-final-ecr-lifecycle-policy.png.png) |
+| 17 | Trạng thái ECR Lifecycle Policy | `evidence/week4/16-final-ecr-lifecycle-policy.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/16-final-ecr-lifecycle-policy.png) |
 | 18 | AWS CloudShell và môi trường build | `evidence/week4/17-final-cloudshell-environment.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/17-final-cloudshell-environment.png) |
 | 19 | Quá trình Docker build trên CloudShell | `evidence/week4/18-final-cloudshell-docker-build.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/18-final-cloudshell-docker-build.png) |
 | 20 | Kiểm thử endpoint của container trên CloudShell | `evidence/week4/19-final-cloudshell-container-health.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/19-final-cloudshell-container-health.png) |
@@ -303,9 +303,20 @@ Các ảnh minh chứng tuần 4 được tổ chức trong thư mục `evidence
 | 22 | Kết quả push image lên Amazon ECR | `evidence/week4/21-final-cloudshell-push-ecr.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/21-final-cloudshell-push-ecr.png) |
 | 23 | Cấu hình bảo mật, tags và mã hóa của S3 bucket | `evidence/week4/22-final-s3-bucket-security-tags-encryption.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/22-final-s3-bucket-security-tags-encryption.png) |
 | 24 | Pull Request #3 cập nhật README và `.dockerignore` đã merge | `evidence/week4/23-final-github-pr-merged.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/23-final-github-pr-merged.png) |
-| 25 | Sơ đồ kiến trúc AWS | `sơ đồ kiến trúc.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/s%C6%A1%20%C4%91%E1%BB%93%20ki%E1%BA%BFn%20tr%C3%BAc.png) |
 
-### 8.1. Lịch sử commit tuần 4
+### 8.1. Sơ đồ kiến trúc
+
+Sơ đồ kiến trúc AWS của hệ thống được lưu trong repository và có thể xem trực tiếp tại:
+
+**[Xem sơ đồ kiến trúc](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/s%C6%A1%20%C4%91%E1%BB%93%20ki%E1%BA%BFn%20tr%C3%BAc.png)**
+
+### 8.2. Video demo
+
+Video demo trình bày quá trình triển khai và kiểm thử ứng dụng trên Amazon ECS Fargate:
+
+**[Xem video demo trên Google Drive](https://drive.google.com/file/d/1Ban1gdp179PUBW8HW6FIgDVBUiYEPIcj/view?usp=sharing)**
+
+### 8.3. Lịch sử commit tuần 4
 
 | Commit | Ngày | Nội dung | Liên kết |
 |---|---|---|---|
