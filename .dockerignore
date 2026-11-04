@@ -6,3 +6,8 @@ __pycache__/
 .gitignore
 .env
 .pytest_cache/
+# Files not required for Docker build
+*.msi
+evidence/
+reports/
+README.md
