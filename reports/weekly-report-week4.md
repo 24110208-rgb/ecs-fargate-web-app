@@ -336,3 +336,12 @@ Trong quá trình thực hiện dự án tuần 4, em có sử dụng công cụ
 | Phần em đã kiểm tra, chỉnh sửa và hoàn thiện | Em trực tiếp thực hiện các thao tác trên AWS và GitHub, kiểm tra kết quả thực tế, đối chiếu thông tin tài nguyên và tự biên soạn toàn bộ nội dung báo cáo. Em chịu trách nhiệm về tính chính xác của nội dung báo cáo và kết quả dự án. |
 
 Em sử dụng AI như một công cụ hỗ trợ kỹ thuật trong quá trình thực hiện dự án, không dùng để viết báo cáo.
+
+
+---
+
+**Người thực hiện báo cáo:** Đỗ Lê Gia Hân
+
+**Mã số sinh viên:** 24110208
+
+**Ngày cập nhật:** 04/11/2026
