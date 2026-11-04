@@ -279,30 +279,30 @@ Các ảnh minh chứng tuần 4 được tổ chức trong thư mục `evidence
 
 | STT | Nội dung minh chứng | File minh chứng trong repository | GitHub Blob URL |
 |---:|---|---|---|
-| 1 | ECS Service khi chạy hai tasks | `evidence/week4/01-final-ecs-service-2-tasks.png` | [Dán link blob tại đây] |
-| 2 | Target Group có hai targets Healthy | `evidence/week4/02-final-target-group-2-healthy.png` | [Dán link blob tại đây] |
-| 3 | Trang chủ ứng dụng qua ALB | `evidence/week4/03-final-homepage.png` | [Dán link blob tại đây] |
-| 4 | Endpoint `/health` trả về kết quả healthy | `evidence/week4/04-final-health-endpoint.png` | [Dán link blob tại đây] |
-| 5 | CloudWatch Logs của ECS Task thứ nhất | `evidence/week4/05-final-cloudwatch-task1.png` | [Dán link blob tại đây] |
-| 6 | CloudWatch Logs của ECS Task thứ hai | `evidence/week4/06-final-cloudwatch-task2.png` | [Dán link blob tại đây] |
-| 7 | CloudWatch Dashboard theo dõi ECS và ALB | `evidence/week4/07-final-cloudwatch-dashboard.png` | [Dán link blob tại đây] |
-| 8 | CloudWatch Alarm | `evidence/week4/08-final-cloudwatch-alarm.png` | [Dán link blob tại đây] |
-| 9 | Inbound rule của Task Security Group | `evidence/week4/09a-final-task-security-group.png` | [Dán link blob tại đây] |
-| 10 | Inbound rule của ALB Security Group | `evidence/week4/09b-final-alb-security-group.png` | [Dán link blob tại đây] |
-| 11 | ECS Service sau khi scale về 0 | `evidence/week4/10-final-ecs-service-scaled-zero.png` | [Dán link blob tại đây] |
-| 12 | Trạng thái Service Auto Scaling | `evidence/week4/11-final-service-autoscaling-not-configured.png` | [Dán link blob tại đây] |
-| 13 | Mức sử dụng ngân sách Learner Lab | `evidence/week4/12-final-learner-lab-budget.png` | [Dán link blob tại đây] |
-| 14 | Thông tin Application Load Balancer | `evidence/week4/13-final-alb-resource-review.png` | [Dán link blob tại đây] |
-| 15 | Các image tags trong Amazon ECR | `evidence/week4/14-final-ecr-images.png` | [Dán link blob tại đây] |
-| 16 | CloudWatch Log Group và thời gian lưu trữ | `evidence/week4/15-final-cloudwatch-log-group-review.png` | [Dán link blob tại đây] |
-| 17 | Trạng thái ECR Lifecycle Policy | `evidence/week4/16-final-ecr-lifecycle-policy.png` | [Dán link blob tại đây] |
-| 18 | AWS CloudShell và môi trường build | `evidence/week4/17-final-cloudshell-environment.png` | [Dán link blob tại đây] |
-| 19 | Quá trình Docker build trên CloudShell | `evidence/week4/18-final-cloudshell-docker-build.png` | [Dán link blob tại đây] |
-| 20 | Kiểm thử endpoint của container trên CloudShell | `evidence/week4/19-final-cloudshell-container-health.png` | [Dán link blob tại đây] |
-| 21 | Docker Logs của container thử nghiệm | `evidence/week4/20-final-cloudshell-container-logs.png` | [Dán link blob tại đây] |
-| 22 | Kết quả push image lên Amazon ECR | `evidence/week4/21-final-cloudshell-push-ecr.png` | [Dán link blob tại đây] |
-| 23 | Cấu hình bảo mật, tags và mã hóa của S3 bucket | `evidence/week4/22-final-s3-bucket-security-tags-encryption.png` | [Dán link blob tại đây] |
-| 24 | Pull Request #3 cập nhật README và `.dockerignore` đã merge | `evidence/week4/23-final-github-pr-merged.png` | [Dán link blob tại đây] |
+| 1 | ECS Service khi chạy hai tasks | `evidence/week4/01-final-ecs-service-2-tasks.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/01-final-ecs-service-2-tasks.png) |
+| 2 | Target Group có hai targets Healthy | `evidence/week4/02-final-target-group-2-healthy.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/02-final-target-group-2-healthy.png) |
+| 3 | Trang chủ ứng dụng qua ALB | `evidence/week4/03-final-homepage.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/03-final-homepage.png) |
+| 4 | Endpoint `/health` trả về kết quả healthy | `evidence/week4/04-final-health-endpoint.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/04-final-health-endpoint.png) |
+| 5 | CloudWatch Logs của ECS Task thứ nhất | `evidence/week4/05-final-cloudwatch-task1.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/05-final-cloudwatch-task1.png) |
+| 6 | CloudWatch Logs của ECS Task thứ hai | `evidence/week4/06-final-cloudwatch-task2.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/06-final-cloudwatch-task2.png) |
+| 7 | CloudWatch Dashboard theo dõi ECS và ALB | `evidence/week4/07-final-cloudwatch-dashboard.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/07-final-cloudwatch-dashboard.png) |
+| 8 | CloudWatch Alarm | `evidence/week4/08-final-cloudwatch-alarm.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/08-final-cloudwatch-alarm.png) |
+| 9 | Inbound rule của Task Security Group | `evidence/week4/09a-final-task-security-group.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/09a-final-task-security-group.png) |
+| 10 | Inbound rule của ALB Security Group | `evidence/week4/09b-final-alb-security-group.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/09b-final-alb-security-group.png) |
+| 11 | ECS Service sau khi scale về 0 | `evidence/week4/10-final-ecs-service-scaled-zero.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/10-final-ecs-service-scaled-zero.png) |
+| 12 | Trạng thái Service Auto Scaling | `evidence/week4/11-final-service-autoscaling-not-configured.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/11-final-service-autoscaling-not-configured.png) |
+| 13 | Mức sử dụng ngân sách Learner Lab | `evidence/week4/12-final-learner-lab-budget.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/12-final-learner-lab-budget.png) |
+| 14 | Thông tin Application Load Balancer | `evidence/week4/13-final-alb-resource-review.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/13-final-alb-resource-review.png) |
+| 15 | Các image tags trong Amazon ECR | `evidence/week4/14-final-ecr-images.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/14-final-ecr-images.png) |
+| 16 | CloudWatch Log Group và thời gian lưu trữ | `evidence/week4/15-final-cloudwatch-log-group-review.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/15-final-cloudwatch-log-group-review.png) |
+| 17 | Trạng thái ECR Lifecycle Policy | `evidence/week4/16-final-ecr-lifecycle-policy.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/16-final-ecr-lifecycle-policy.png.png) |
+| 18 | AWS CloudShell và môi trường build | `evidence/week4/17-final-cloudshell-environment.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/17-final-cloudshell-environment.png) |
+| 19 | Quá trình Docker build trên CloudShell | `evidence/week4/18-final-cloudshell-docker-build.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/18-final-cloudshell-docker-build.png) |
+| 20 | Kiểm thử endpoint của container trên CloudShell | `evidence/week4/19-final-cloudshell-container-health.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/19-final-cloudshell-container-health.png) |
+| 21 | Docker Logs của container thử nghiệm | `evidence/week4/20-final-cloudshell-container-logs.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/20-final-cloudshell-container-logs.png) |
+| 22 | Kết quả push image lên Amazon ECR | `evidence/week4/21-final-cloudshell-push-ecr.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/21-final-cloudshell-push-ecr.png) |
+| 23 | Cấu hình bảo mật, tags và mã hóa của S3 bucket | `evidence/week4/22-final-s3-bucket-security-tags-encryption.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/22-final-s3-bucket-security-tags-encryption.png) |
+| 24 | Pull Request #3 cập nhật README và `.dockerignore` đã merge | `evidence/week4/23-final-github-pr-merged.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/23-final-github-pr-merged.png) |
 ### 9. Khai báo sử dụng công cụ AI
 
 Trong quá trình thực hiện dự án và hoàn thiện báo cáo tuần 4, em có sử dụng công cụ AI để tham khảo, hỗ trợ giải thích kỹ thuật, kiểm tra lỗi và trình bày nội dung báo cáo. Việc sử dụng AI được khai báo cụ thể như sau:
