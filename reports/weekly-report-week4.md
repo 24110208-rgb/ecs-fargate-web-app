@@ -17,9 +17,9 @@
 
 ### 2. Phân công công việc và thời gian thực hiện
 
-Trong tuần 4, em (mã sinh viên 24110208 – Đỗ Lê Gia Hân) trực tiếp thực hiện các công việc kỹ thuật của dự án, bao gồm kiểm thử hệ thống AWS, build và kiểm thử Docker image trên CloudShell, push image lên ECR, cập nhật repository GitHub, tạo S3 bucket và rà soát tài nguyên sau khi kiểm thử.
+Trong tuần 4, em (mã sinh viên 24110208 – Đỗ Lê Gia Hân) trực tiếp thực hiện các công việc kỹ thuật của dự án, bao gồm kiểm thử hệ thống AWS, build và kiểm thử Docker image trên CloudShell, push image lên ECR, cập nhật repository GitHub, tạo S3 bucket và rà soát tài nguyên sau khi kiểm thử. Em cũng là người biên soạn chính toàn bộ báo cáo tiến độ tuần 4.
 
-Thành viên 24110380 hỗ trợ em rà soát, sắp xếp và hoàn thiện nội dung báo cáo tiến độ tuần 4 trong 30 phút.
+Thành viên 24110380 hỗ trợ bổ sung thông tin, rà soát và sắp xếp nội dung báo cáo tiến độ tuần 4 trong 30 phút.
 
 Chi tiết công việc của từng thành viên:
 
@@ -32,7 +32,7 @@ Chi tiết công việc của từng thành viên:
 | 24110208 | Đỗ Lê Gia Hân | Đăng nhập ECR, gắn tag và push image `week4-cloudshell`; kiểm tra image tags và thông tin image trên ECR; đăng xuất ECR. | Image `week4-cloudshell` được push thành công; ECR có hai tags `week1` và `week4-cloudshell`. | 30 phút |
 | 24110208 | Đỗ Lê Gia Hân | Cập nhật README và `.dockerignore`; commit thay đổi, tạo Pull Request #3, xử lý quy tắc bảo vệ nhánh và merge vào `main`; đồng bộ CloudShell với `origin/main`. | Pull Request #3 được merge; commit trên `main` là `59ca325`; working tree sạch sau khi đồng bộ. | 60 phút |
 | 24110208 | Đỗ Lê Gia Hân | Tạo S3 bucket, kiểm tra Block Public Access, mã hóa SSE-S3 và tags; rà soát ECR, CloudWatch, ALB, ngân sách Learner Lab; scale ECS Service về 0. | S3 bucket được tạo và cấu hình riêng tư; ECS Service trở về Desired 0 / Running 0; hoàn tất rà soát tài nguyên. | 45 phút |
-| 24110380 | Thành viên 2 | Hỗ trợ rà soát, sắp xếp và hoàn thiện nội dung báo cáo tiến độ tuần 4; đối chiếu các hạng mục công việc và minh chứng cần trình bày. | Hỗ trợ hoàn thiện nội dung báo cáo tuần 4. | 30 phút |
+| 24110380 | Thành viên 2 | Hỗ trợ bổ sung thông tin, rà soát và sắp xếp nội dung báo cáo tiến độ tuần 4; đối chiếu các hạng mục công việc và minh chứng cần trình bày. | Hỗ trợ hoàn thiện nội dung báo cáo tuần 4. | 30 phút |
 
 **Tổng thời gian thực hiện của Đỗ Lê Gia Hân: 5 giờ.**
 
