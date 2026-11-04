@@ -303,6 +303,14 @@ Các ảnh minh chứng tuần 4 được tổ chức trong thư mục `evidence
 | 22 | Kết quả push image lên Amazon ECR | `evidence/week4/21-final-cloudshell-push-ecr.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/21-final-cloudshell-push-ecr.png) |
 | 23 | Cấu hình bảo mật, tags và mã hóa của S3 bucket | `evidence/week4/22-final-s3-bucket-security-tags-encryption.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/22-final-s3-bucket-security-tags-encryption.png) |
 | 24 | Pull Request #3 cập nhật README và `.dockerignore` đã merge | `evidence/week4/23-final-github-pr-merged.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/23-final-github-pr-merged.png) |
+
+### 8.1. Lịch sử commit tuần 4
+
+| Commit | Ngày | Nội dung | Liên kết |
+|---|---|---|---|
+| `a82cb72` | 04/11/2026 | Add week4 evidence, reports and architecture diagram | [a82cb72c](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/a82cb72c2d6023632f121c07c5bacc6ff4435d96) |
+| `4875bb4` | 04/11/2026 | docs: add blob links for week4 evidence in report | [4875bb45](https://github.com/24110208-rgb/ecs-fargate-web-app/commit/4875bb4553406d6e60b13f7227a667220470ec3b) |
+
 ### 9. Khai báo sử dụng công cụ AI
 
 Trong quá trình thực hiện dự án và hoàn thiện báo cáo tuần 4, em có sử dụng công cụ AI để tham khảo, hỗ trợ giải thích kỹ thuật, kiểm tra lỗi và trình bày nội dung báo cáo. Việc sử dụng AI được khai báo cụ thể như sau:
