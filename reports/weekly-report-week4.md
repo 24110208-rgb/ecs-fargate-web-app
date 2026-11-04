@@ -325,14 +325,14 @@ Video demo trình bày quá trình triển khai và kiểm thử ứng dụng tr
 
 ### 9. Khai báo sử dụng công cụ AI
 
-Trong quá trình thực hiện dự án và hoàn thiện báo cáo tuần 4, em có sử dụng công cụ AI để tham khảo, hỗ trợ giải thích kỹ thuật, kiểm tra lỗi và trình bày nội dung báo cáo. Việc sử dụng AI được khai báo cụ thể như sau:
+Trong quá trình thực hiện dự án tuần 4, em có sử dụng công cụ AI để tham khảo và hỗ trợ giải thích kỹ thuật. Việc sử dụng AI được khai báo cụ thể như sau:
 
-| Nội dung                                     | Thông tin khai báo                                                                                                                                                                                                                                                                                      |
+| Nội dung                                     | Thông tin khai báo |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Công cụ AI                                   | ChatGPT                                                                                                                                                                                                                                                                                                 |
-| Phiên bản / Model                            | GPT-6                                                                                                                                                                                                                                                                                                   |
-| Prompt đã sử dụng                            | Hỗ trợ hướng dẫn kiểm thử ứng dụng trên Amazon ECS Fargate; giải thích và xử lý các bước build Docker image trên AWS CloudShell, kiểm thử container và push image lên Amazon ECR; hỗ trợ rà soát README, `.dockerignore` và xây dựng nội dung báo cáo tiến độ tuần 4.                                   |
-| Nội dung AI tạo ra                           | Các hướng dẫn thao tác AWS, giải thích lệnh Docker và AWS CLI, gợi ý xử lý các vấn đề trong quá trình thực hiện, bố cục và bản nháp nội dung báo cáo tuần 4.                                                                                                                                            |
-| Phần em đã kiểm tra, chỉnh sửa và hoàn thiện | Em trực tiếp thực hiện các thao tác trên AWS và GitHub, kiểm tra kết quả thực tế, đối chiếu thông tin tài nguyên, điều chỉnh nội dung báo cáo theo tiến độ đã thực hiện, bổ sung số liệu, worklog và đường dẫn minh chứng. Em chịu trách nhiệm về tính chính xác của nội dung báo cáo và kết quả dự án. |
+| Công cụ AI                                   | ChatGPT |
+| Phiên bản / Model                            | GPT-6 |
+| Prompt đã sử dụng                            | Hỗ trợ hướng dẫn kiểm thử ứng dụng trên Amazon ECS Fargate; giải thích và xử lý các bước build Docker image trên AWS CloudShell, kiểm thử container và push image lên Amazon ECR; hỗ trợ rà soát README và `.dockerignore`. |
+| Nội dung AI tạo ra                           | Các hướng dẫn thao tác AWS, giải thích lệnh Docker và AWS CLI, gợi ý xử lý các vấn đề trong quá trình thực hiện. |
+| Phần em đã kiểm tra, chỉnh sửa và hoàn thiện | Em trực tiếp thực hiện các thao tác trên AWS và GitHub, kiểm tra kết quả thực tế, đối chiếu thông tin tài nguyên và tự biên soạn toàn bộ nội dung báo cáo. Em chịu trách nhiệm về tính chính xác của nội dung báo cáo và kết quả dự án. |
 
-Em sử dụng AI như một công cụ hỗ trợ trong quá trình học tập và thực hiện dự án. Các nội dung do AI đề xuất đều được em xem xét, đối chiếu với kết quả thực tế trước khi sử dụng.
+Em sử dụng AI như một công cụ hỗ trợ kỹ thuật trong quá trình thực hiện dự án, không dùng để viết báo cáo.
