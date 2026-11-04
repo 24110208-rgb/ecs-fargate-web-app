@@ -303,6 +303,7 @@ Các ảnh minh chứng tuần 4 được tổ chức trong thư mục `evidence
 | 22 | Kết quả push image lên Amazon ECR | `evidence/week4/21-final-cloudshell-push-ecr.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/21-final-cloudshell-push-ecr.png) |
 | 23 | Cấu hình bảo mật, tags và mã hóa của S3 bucket | `evidence/week4/22-final-s3-bucket-security-tags-encryption.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/22-final-s3-bucket-security-tags-encryption.png) |
 | 24 | Pull Request #3 cập nhật README và `.dockerignore` đã merge | `evidence/week4/23-final-github-pr-merged.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/evidence/week4/23-final-github-pr-merged.png) |
+| 25 | Sơ đồ kiến trúc AWS | `sơ đồ kiến trúc.png` | [Xem](https://github.com/24110208-rgb/ecs-fargate-web-app/blob/main/s%C6%A1%20%C4%91%E1%BB%93%20ki%E1%BA%BFn%20tr%C3%BAc.png) |
 
 ### 8.1. Lịch sử commit tuần 4
 
